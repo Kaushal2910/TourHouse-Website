@@ -1,4 +1,3 @@
-// pages/contact.js
 import { useState } from 'react';
 import styles from '@/styles/Contact.module.css';
 import Image from 'next/image';
@@ -64,7 +63,7 @@ export default function Contact() {
       <div className={styles.container}>
         {/* Left Section */}
         <div className={styles.formSection}>
-          <h1>Let's Plan Your Next Adventure</h1>
+          <h1>Let&apos;s Plan Your Next Adventure</h1>
           <p>We usually respond within 24 hours.</p>
 
           <form className={styles.form} onSubmit={handleSubmit}>
@@ -127,5 +126,3 @@ export default function Contact() {
     </div>
   );
 }
-// Add a blank line at the bottom
-//yes
