@@ -7,6 +7,9 @@
 
 /* ---------------- Hero Section ---------------- */
 
+
+/* ---------------- Hero Section ---------------- */
+
 .hero {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
@@ -22,7 +25,7 @@
 }
 
 .heroText {
-  flex: 1;
+  flex: 1 1 300px;
   min-width: 300px;
 }
 
@@ -40,16 +43,60 @@
 }
 
 .heroImage {
-  flex: 1;
+  flex: 1 1 300px;
   min-width: 300px;
   text-align: center;
 }
 
 .heroImage img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
   border-radius: 16px;
   object-fit: cover;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
+
+/* ---------------- Responsive Fix ---------------- */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .heroText {
+    text-align: center;
+  }
+
+  .heroText h1 {
+    font-size: 2.2rem;
+  }
+
+  .heroText p {
+    font-size: 1.05rem;
+  }
+
+  .heroImage img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------- Guides Section ---------------- */
 
@@ -170,22 +217,3 @@
 }
 
 /* ---------------- Responsive ---------------- */
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column-reverse;
-    padding: 40px 30px;
-  }
-
-  .heroText h1 {
-    font-size: 2.3rem;
-  }
-
-  .guideCard {
-    padding: 20px;
-  }
-
-  .reviewCard {
-    font-size: 1.05rem;
-  }
-}

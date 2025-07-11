@@ -1,12 +1,12 @@
-/* styles/Navbar.module.css */
-
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1e293b;
-  padding: 24px 60px; /* more space from left/right */
+  padding: 24px 60px;
   color: white;
+  position: relative;
+  z-index: 100;
 }
 
 .logo a {
@@ -14,8 +14,10 @@
   font-size: 1.8rem;
   align-items: center;
   text-decoration: none;
+  color: white;
 }
 
+/* Desktop nav */
 .navLinks {
   list-style: none;
   display: flex;
@@ -32,4 +34,57 @@
 
 .navLinks li a:hover {
   text-decoration: underline;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    background-color: #1e293b;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .navLinks.active {
+    max-height: 300px;
+    padding: 20px 0;
+  }
+
+  .navLinks li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navLinks li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
 }

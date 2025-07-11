@@ -194,3 +194,33 @@
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+  .heroSection {
+    background-position: right center; /* Shift image to keep girl on right */
+    padding-left: 20px; /* Reduce side padding */
+    height: 80vh; /* Optional: reduce height on smaller screens */
+  }
+
+  .overlay {
+    padding: 20px;
+    max-width: 100%; /* Allow full width use */
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: darken for better contrast */
+    text-align: center;
+  }
+
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+ 
+  .overlay {
+    background-color: rgba(0, 0, 0, 7); /* ↓ lower opacity */
+  }
+
+
+}
