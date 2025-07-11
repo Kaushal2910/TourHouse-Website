@@ -8,7 +8,7 @@ export default function About() {
   const reviews = [
     {
       name: 'Aman Verma',
-      text: 'The guide was amazing and knew all the hidden gems. One of the best tours I’ve had!',
+      text: 'The guide was amazing and knew all the hidden gems. One of the best tours I&apos;ve had!',
     },
     {
       name: 'Sarah Thomas',
@@ -25,7 +25,7 @@ export default function About() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentReview((prev) => (prev + 1) % reviews.length);
-    }, 5000); // Change every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
   }, [reviews.length]);
 
@@ -37,7 +37,7 @@ export default function About() {
           <h1>About TourHouse</h1>
           <p>
             TourHouse is built by passionate travelers who believe that the best journeys connect people,
-            stories, and cultures. Whether it's a historic city or a hidden village, we turn every trip into unforgettable memories.
+            stories, and cultures. Whether it&apos;s a historic city or a hidden village, we turn every trip into unforgettable memories.
           </p>
         </div>
         <div className={styles.heroImage}>
@@ -109,7 +109,7 @@ export default function About() {
                 index === currentReview ? styles.active : styles.inactive
               }`}
             >
-              <p>"{review.text}"</p>
+              <p>&quot;{review.text}&quot;</p>
               <span>- {review.name}</span>
             </div>
           ))}
