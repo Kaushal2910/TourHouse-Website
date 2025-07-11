@@ -197,15 +197,18 @@
 
 @media (max-width: 768px) {
   .heroSection {
-    background-position: right center; /* Shift image to keep girl on right */
-    padding-left: 20px; /* Reduce side padding */
-    height: 80vh; /* Optional: reduce height on smaller screens */
+    background-position: right center; /* Keep girl on right */
+    padding-left: 0; /* Remove left push */
+    padding: 0 20px; /* Add horizontal padding */
+    height: 80vh;
+    justify-content: center; /* ← Center the overlay */
+    text-align: center;
   }
 
   .overlay {
     padding: 20px;
-    max-width: 100%; /* Allow full width use */
-    background-color: rgba(0, 0, 0, 0.6); /* Optional: darken for better contrast */
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
   }
 
@@ -216,11 +219,4 @@
   .overlay p {
     font-size: 1rem;
   }
-
- 
-  .overlay {
-    background-color: rgba(0, 0, 0, 7); /* ↓ lower opacity */
-  }
-
-
 }
