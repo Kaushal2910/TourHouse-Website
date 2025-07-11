@@ -43,8 +43,8 @@ export default function Footer() {
         <div className={styles.column}>
           <h4>Connect With Us</h4>
           <div className={styles.socialIcons}>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+            <a href="www.linkedin.com/in/kaushal-sonawane-94b536331" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://wa.me/918767515720" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>

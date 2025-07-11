@@ -1,15 +1,12 @@
-// components/Navbar.js
-
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
 
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/logo.png" alt="TourHouse Logo" width={110} height={32} />
+        <Link href="/" className={styles.brandName}>
+          <span>TourHouse</span>
         </Link>
       </div>
       <ul className={styles.navLinks}>
