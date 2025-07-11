@@ -1,5 +1,3 @@
-// pages/about.js
-
 import styles from '@/styles/About.module.css';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
