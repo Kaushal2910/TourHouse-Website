@@ -100,7 +100,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 rows="5"
-                placeholder="Tell us what you&apos;re looking for..."
+                placeholder="Tell us what you&#39;re looking for..."
                 value={formData.message}
                 onChange={handleChange}
                 required
