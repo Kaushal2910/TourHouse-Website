@@ -1,0 +1,196 @@
+/* Hero Section */
+.heroSection {
+  background: url('/place-images/place1.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 40px;
+  max-width: 500px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  background-color: #facc15;
+  color: #1e293b;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #eab308;
+}
+
+/* Welcome Section */
+.welcomeSection {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.welcomeSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.welcomeSection p {
+  font-size: 1.1rem;
+  color: #374151;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+/* Features Section */
+.featuresSection {
+  padding: 60px 20px;
+  background-color: #062d7b;
+}
+
+.featureBackground {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.featureCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.featureText {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Destinations Gallery */
+.destinations {
+  padding: 60px 20px;
+  background-color: #f1f5f9;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+
+.gridGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: background 0.4s ease, opacity 0.4s ease;
+}
+
+.card:hover .cardOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.placeName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.exploreBtn {
+  background-color: #facc15;
+  color: #1e293b;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.exploreBtn:hover {
+  background-color: #eab308;
+}
+
+/* CTA Section */
+.ctaSection {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.ctaSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

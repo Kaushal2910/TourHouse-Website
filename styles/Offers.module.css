@@ -1,0 +1,121 @@
+
+.hero {
+  background: url('/place-images/offerpagebg.jpeg') center/cover no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-align: left; /* Align text to left */
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  background: rgba(30, 41, 59, 0.7); /* Dark blue-gray overlay */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+.heroContent h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+.dealsSection {
+  padding: 60px 20px;
+}
+
+.dealsSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fefefe;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 180px;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  color: #facc15;
+  padding: 6px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.details {
+  padding: 20px;
+  text-align: left;
+}
+
+.duration {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.newPrice {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.hotel {
+  font-size: 0.95rem;
+  color: #374151;
+}

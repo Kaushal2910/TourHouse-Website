@@ -1,0 +1,35 @@
+/* styles/Navbar.module.css */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 24px 60px; /* more space from left/right */
+  color: white;
+}
+
+.logo a {
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navLinks li a:hover {
+  text-decoration: underline;
+}
